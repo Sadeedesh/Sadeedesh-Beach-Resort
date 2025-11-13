@@ -40,7 +40,7 @@ const Services = ({ onBookNow }: { onBookNow?: () => void }) => {
   return (
     <section id="services" className="py-20 bg-gradient-to-b from-purple-50 to-violet-100">
       <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-16 xl:px-24">
-        <div ref={titleRef as any} className={`text-center mb-16 transition-all duration-1000 transform ${titleVisible ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-10 scale-95'}`}>
+        <div ref={titleRef as any} className={`text-center mb-16 transition-all duration-1000 transform ${titleVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-150'}`}>
           <h2 className="text-4xl md:text-5xl font-bold text-orange-800 mb-4">Signature Experiences</h2>
           <div className="w-24 h-1 bg-gradient-to-r from-orange-500 to-pink-500 mx-auto mb-6"></div>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -48,7 +48,7 @@ const Services = ({ onBookNow }: { onBookNow?: () => void }) => {
           </p>
         </div>
 
-        <div ref={tabsRef as any} className={`bg-white rounded-2xl shadow-xl overflow-hidden transition-all duration-1000 delay-200 transform hover-lift ${tabsVisible ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-10 scale-95'}`}>
+        <div ref={tabsRef as any} className={`bg-white rounded-2xl shadow-xl overflow-hidden transition-all duration-1000 delay-200 transform hover-lift ${tabsVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-20'}`}>
           <div className="flex flex-wrap border-b border-gray-200">
             {categories.map((category) => {
               const Icon = category.icon;

@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { X, ChevronLeft, ChevronRight, Filter } from 'lucide-react';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
 
-const Gallery = ({ onBookNow }: { onBookNow?: () => void }) => {
+const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
   const [activeFilter, setActiveFilter] = useState('All');
   const { ref: titleRef, isVisible: titleVisible } = useScrollAnimation(0.1);
@@ -81,7 +81,7 @@ const Gallery = ({ onBookNow }: { onBookNow?: () => void }) => {
   return (
     <section id="gallery" className="py-20 bg-gradient-to-b from-rose-50 to-pink-100">
       <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-16 xl:px-24">
-        <div ref={titleRef as any} className={`text-center mb-16 transition-all duration-1000 ${titleVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+        <div ref={titleRef as any} className={`text-center mb-16 transition-all duration-1000 ${titleVisible ? 'opacity-100 skew-y-0' : 'opacity-0 skew-y-3'}`}>
           <h2 className="text-4xl md:text-5xl font-bold text-orange-800 mb-4">Photo Gallery</h2>
           <div className="w-24 h-1 bg-gradient-to-r from-orange-500 to-pink-500 mx-auto mb-6"></div>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -106,7 +106,7 @@ const Gallery = ({ onBookNow }: { onBookNow?: () => void }) => {
           ))}
         </div>
 
-        <div ref={galleryRef as any} className={`columns-1 md:columns-2 lg:columns-3 xl:columns-4 gap-6 space-y-6 transition-all duration-1000 delay-400 ${galleryVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+        <div ref={galleryRef as any} className={`columns-1 md:columns-2 lg:columns-3 xl:columns-4 gap-6 space-y-6 transition-all duration-1000 delay-400 ${galleryVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}>
           {filteredImages.map((image, index) => (
             <div
               key={index}

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ShoppingCart, Star, ChevronLeft, ChevronRight, Wifi, Coffee, Car, Users } from 'lucide-react';
+import { Star, ChevronLeft, ChevronRight, Wifi, Coffee, Car, Users } from 'lucide-react';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
 
 const Rooms = ({ onBookNow }: { onBookNow: () => void }) => {
@@ -61,7 +61,7 @@ const Rooms = ({ onBookNow }: { onBookNow: () => void }) => {
   return (
     <section id="rooms" className="py-20 bg-gradient-to-b from-emerald-50 to-teal-100">
       <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-16 xl:px-24">
-        <div ref={titleRef as any} className={`text-center mb-16 transition-all duration-1000 transform ${titleVisible ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-10 scale-95'}`}>
+        <div ref={titleRef as any} className={`text-center mb-16 transition-all duration-1000 transform ${titleVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-20'}`}>
           <h2 className="text-4xl md:text-5xl font-bold text-orange-800 mb-4">Luxury Accommodations</h2>
           <div className="w-24 h-1 bg-gradient-to-r from-orange-500 to-pink-500 mx-auto mb-6"></div>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -71,7 +71,7 @@ const Rooms = ({ onBookNow }: { onBookNow: () => void }) => {
         </div>
 
         <div className="relative">
-          <div ref={roomRef as any} className={`bg-white rounded-2xl shadow-2xl overflow-hidden transition-all duration-1000 delay-200 transform hover-lift ${roomVisible ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-10 scale-95'}`}>
+          <div ref={roomRef as any} className={`bg-white rounded-2xl shadow-2xl overflow-hidden transition-all duration-1000 delay-200 transform hover-lift ${roomVisible ? 'opacity-100 rotate-0' : 'opacity-0 rotate-6'}`}>
             <div className="grid lg:grid-cols-2">
               <div className="relative h-96 lg:h-auto">
                 <img

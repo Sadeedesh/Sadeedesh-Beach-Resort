@@ -46,8 +46,8 @@ function App() {
       <About />
       <Rooms onBookNow={() => setCurrentPage('booking')} />
       <Services onBookNow={() => setCurrentPage('booking')} />
-      <Gallery onBookNow={() => setCurrentPage('booking')} />
-      <Reviews onBookNow={() => setCurrentPage('booking')} />
+      <Gallery />
+      <Reviews />
       <Contact onBookNow={() => setCurrentPage('booking')} />
       <Footer />
       <ChatBot onBookNow={() => setCurrentPage('booking')} />

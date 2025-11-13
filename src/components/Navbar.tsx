@@ -32,7 +32,7 @@ const Navbar = ({ onBookNow }: { onBookNow: () => void }) => {
               <SadeedehLogo size={28} className="text-white" />
             </div>
             <div>
-              <h1 className="text-2xl font-bold bg-gradient-to-r from-orange-800 to-pink-700 bg-clip-text text-transparent resort-logo">Sadeedeh</h1>
+              <h1 className="text-xl font-bold bg-gradient-to-r from-orange-800 to-pink-700 bg-clip-text text-transparent resort-logo">Sadeedeh</h1>
               <p className="text-xs text-orange-600 font-medium tracking-widest">BEACH RESORT</p>
             </div>
           </div>
@@ -42,7 +42,7 @@ const Navbar = ({ onBookNow }: { onBookNow: () => void }) => {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="text-gray-700 hover:text-orange-600 transition-colors duration-300 font-medium"
+                className="text-gray-700 hover:text-orange-600 transition-colors duration-300 font-medium text-sm"
               >
                 {item.label}
               </button>

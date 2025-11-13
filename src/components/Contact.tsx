@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Mail, Phone, MapPin, Send, MessageCircle, Calendar, Headphones } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, MessageCircle, Calendar } from 'lucide-react';
 import emailjs from '@emailjs/browser';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
 
@@ -61,7 +61,7 @@ const Contact = ({ onBookNow }: { onBookNow?: () => void }) => {
   return (
     <section id="contact" className="py-20 bg-gradient-to-b from-slate-50 to-gray-100">
       <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-16 xl:px-24">
-        <div ref={titleRef as any} className={`text-center mb-16 transition-all duration-1000 ${titleVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+        <div ref={titleRef as any} className={`text-center mb-16 transition-all duration-1000 ${titleVisible ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-20 scale-90'}`}>
           <h2 className="text-4xl md:text-5xl font-bold text-orange-800 mb-4">Begin Your Journey</h2>
           <div className="w-24 h-1 bg-gradient-to-r from-orange-500 to-pink-500 mx-auto mb-6"></div>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -70,7 +70,7 @@ const Contact = ({ onBookNow }: { onBookNow?: () => void }) => {
           </p>
         </div>
 
-        <div ref={cardsRef as any} className={`grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12 transition-all duration-1000 delay-200 ${cardsVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+        <div ref={cardsRef as any} className={`grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12 transition-all duration-1000 delay-200 ${cardsVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-50'}`}>
           <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 text-center">
             <div className="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
               <Phone className="text-orange-700" size={32} />
