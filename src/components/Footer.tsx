@@ -17,8 +17,30 @@ const Footer = () => {
   };
 
   return (
-    <footer ref={footerRef as any} className="bg-gradient-to-br from-orange-800 to-purple-900 text-white pt-16 pb-8">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <footer ref={footerRef as any} className="relative bg-orange-900 text-white pt-16 pb-8 overflow-hidden">
+      <video 
+        autoPlay 
+        muted 
+        loop 
+        playsInline
+        preload="auto"
+        className="absolute inset-0 w-full h-full object-cover opacity-50"
+        onError={(e) => {
+          const target = e.target as HTMLVideoElement;
+          target.style.display = 'none';
+        }}
+      >
+        <source src="https://cdn.pixabay.com/vimeo/459761634/sunset-59717.mp4?width=1280&hash=b0e5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5" type="video/mp4" />
+        <source src="https://player.vimeo.com/external/459761634.hd.mp4?s=f5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5&profile_id=175" type="video/mp4" />
+      </video>
+      <div 
+        className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat opacity-40"
+        style={{
+          backgroundImage: 'url(https://images.pexels.com/photos/1032650/pexels-photo-1032650.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop)'
+        }}
+      />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-orange-900/30 to-orange-800/50" />
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className={`grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12 transition-all duration-1000 ${footerVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <div>
             <div className="flex items-center gap-3 mb-4">

@@ -43,12 +43,12 @@ const Reviews = () => {
 
 
   return (
-    <section id="reviews" className="py-20 bg-gradient-to-b from-amber-50 to-yellow-100">
+    <section id="reviews" className="py-20 bg-gradient-to-br from-violet-50 via-purple-50 to-fuchsia-50">
       <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-16 xl:px-24">
         <div ref={titleRef as any} className={`text-center mb-16 transition-all duration-1000 ${titleVisible ? 'opacity-100 scale-100 rotate-0' : 'opacity-0 scale-75 rotate-12'}`}>
-          <h2 className="text-4xl md:text-5xl font-bold text-orange-800 mb-4">Guest Reviews</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-orange-800 mb-4">Guest Reviews</h2>
           <div className="w-24 h-1 bg-gradient-to-r from-orange-500 to-pink-500 mx-auto mb-6"></div>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+          <p className="text-base text-gray-600 max-w-3xl mx-auto">
             Trusted by travelers worldwide, our commitment to excellence has earned us countless five-star reviews.
           </p>
         </div>

@@ -31,12 +31,12 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-20 bg-gradient-to-b from-blue-50 to-indigo-100">
+    <section id="about" className="py-20 bg-gradient-to-br from-orange-50 via-amber-50 to-yellow-50">
       <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-16 xl:px-24">
         <div ref={titleRef as any} className={`text-center mb-16 transition-all duration-1000 transform ${titleVisible ? 'opacity-100 translate-x-0 rotate-0' : 'opacity-0 -translate-x-20 -rotate-3'}`}>
-          <h2 className="text-4xl md:text-5xl font-bold text-orange-800 mb-4 resort-title">About Sadeedeh Beach Resort</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-orange-800 mb-4 resort-title">About Sadeedeh Beach Resort</h2>
           <div className="w-24 h-1 bg-gradient-to-r from-orange-500 to-pink-500 mx-auto mb-6"></div>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+          <p className="text-base text-gray-600 max-w-3xl mx-auto">
             More than just a place to stay, we're curators of extraordinary moments. Every guest's journey
             is uniquely crafted, blending modern luxury with personalized touches that feel like home.
           </p>
@@ -44,8 +44,8 @@ const About = () => {
 
         <div ref={contentRef as any} className={`grid lg:grid-cols-3 gap-8 mb-16 transition-all duration-1000 delay-200 transform ${contentVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-75'}`}>
           <div className="lg:col-span-2 space-y-6">
-            <h3 className="text-3xl font-bold text-orange-800">Excellence in Numbers</h3>
-            <p className="text-gray-700 leading-relaxed text-lg">
+            <h3 className="text-2xl font-bold text-orange-800">Excellence in Numbers</h3>
+            <p className="text-gray-700 leading-relaxed text-base">
               Two decades of crafting unforgettable experiences, one guest at a time.
             </p>
             

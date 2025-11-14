@@ -79,12 +79,12 @@ const Gallery = () => {
   };
 
   return (
-    <section id="gallery" className="py-20 bg-gradient-to-b from-rose-50 to-pink-100">
+    <section id="gallery" className="py-20 bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-50">
       <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-16 xl:px-24">
-        <div ref={titleRef as any} className={`text-center mb-16 transition-all duration-1000 ${titleVisible ? 'opacity-100 skew-y-0' : 'opacity-0 skew-y-3'}`}>
-          <h2 className="text-4xl md:text-5xl font-bold text-orange-800 mb-4">Photo Gallery</h2>
+        <div ref={titleRef as any} className={`text-center mb-16 transition-all duration-1000 ${titleVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+          <h2 className="text-3xl md:text-4xl font-bold text-orange-800 mb-4">Photo Gallery</h2>
           <div className="w-24 h-1 bg-gradient-to-r from-orange-500 to-pink-500 mx-auto mb-6"></div>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+          <p className="text-base text-gray-600 max-w-3xl mx-auto">
             Discover the elegance and luxury that awaits you at Grand Vista Hotel through our curated collection of spaces.
           </p>
         </div>
@@ -106,7 +106,7 @@ const Gallery = () => {
           ))}
         </div>
 
-        <div ref={galleryRef as any} className={`columns-1 md:columns-2 lg:columns-3 xl:columns-4 gap-6 space-y-6 transition-all duration-1000 delay-400 ${galleryVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}>
+        <div ref={galleryRef as any} className={`columns-1 md:columns-2 lg:columns-3 xl:columns-4 gap-6 space-y-6 transition-all duration-1000 delay-400 ${galleryVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           {filteredImages.map((image, index) => (
             <div
               key={index}

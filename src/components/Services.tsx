@@ -38,12 +38,12 @@ const Services = ({ onBookNow }: { onBookNow?: () => void }) => {
   };
 
   return (
-    <section id="services" className="py-20 bg-gradient-to-b from-purple-50 to-violet-100">
+    <section id="services" className="py-20 bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50">
       <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-16 xl:px-24">
         <div ref={titleRef as any} className={`text-center mb-16 transition-all duration-1000 transform ${titleVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-150'}`}>
-          <h2 className="text-4xl md:text-5xl font-bold text-orange-800 mb-4">Signature Experiences</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-orange-800 mb-4">Signature Experiences</h2>
           <div className="w-24 h-1 bg-gradient-to-r from-orange-500 to-pink-500 mx-auto mb-6"></div>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+          <p className="text-base text-gray-600 max-w-3xl mx-auto">
             Immersive experiences that elevate every moment of your journey, from arrival to departure and beyond.
           </p>
         </div>

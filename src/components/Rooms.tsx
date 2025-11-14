@@ -59,12 +59,12 @@ const Rooms = ({ onBookNow }: { onBookNow: () => void }) => {
   ];
 
   return (
-    <section id="rooms" className="py-20 bg-gradient-to-b from-emerald-50 to-teal-100">
+    <section id="rooms" className="py-20 bg-gradient-to-br from-pink-50 via-rose-50 to-red-50">
       <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-16 xl:px-24">
         <div ref={titleRef as any} className={`text-center mb-16 transition-all duration-1000 transform ${titleVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-20'}`}>
-          <h2 className="text-4xl md:text-5xl font-bold text-orange-800 mb-4">Luxury Accommodations</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-orange-800 mb-4">Luxury Accommodations</h2>
           <div className="w-24 h-1 bg-gradient-to-r from-orange-500 to-pink-500 mx-auto mb-6"></div>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+          <p className="text-base text-gray-600 max-w-3xl mx-auto">
             Sanctuaries of sophistication where every element harmonizes to create your perfect retreat.
             From intimate escapes to grand celebrations, find your ideal space.
           </p>
