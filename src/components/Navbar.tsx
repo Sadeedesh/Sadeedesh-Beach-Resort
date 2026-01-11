@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
-import SadeedehLogo from './SadeedehLogo';
+
 
 const Navbar = ({ onBookNow }: { onBookNow: () => void }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,11 +28,11 @@ const Navbar = ({ onBookNow }: { onBookNow: () => void }) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="shrink-0 flex items-center gap-3">
-            <div className="bg-gradient-to-br from-orange-500 to-pink-600 p-2 rounded-xl shadow-lg">
-              <SadeedehLogo size={28} className="text-white" />
+            <div className="bg-linear-to-br from-orange-500 to-pink-600 p-2 rounded-xl shadow-lg">
+              
             </div>
             <div>
-              <h1 className="text-xl font-bold bg-gradient-to-r from-orange-800 to-pink-700 bg-clip-text text-transparent resort-logo">Sadeedeh</h1>
+              <h1 className="text-xl font-bold bg-linear-to-r from-orange-800 to-pink-700 bg-clip-text text-transparent resort-logo">Sadeedeh</h1>
               <p className="text-xs text-orange-600 font-medium tracking-widest">BEACH RESORT</p>
             </div>
           </div>
@@ -49,7 +49,7 @@ const Navbar = ({ onBookNow }: { onBookNow: () => void }) => {
             ))}
             <button
               onClick={onBookNow}
-              className="bg-gradient-to-r from-orange-500 to-pink-500 hover:from-orange-600 hover:to-pink-600 text-white px-4 py-2 rounded-lg font-semibold transition-all duration-300"
+              className="bg-linear-to-r from-orange-500 to-pink-500 hover:from-orange-600 hover:to-pink-600 text-white px-4 py-2 rounded-lg font-semibold transition-all duration-300"
             >
               Book Now
             </button>

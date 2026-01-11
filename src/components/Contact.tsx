@@ -59,11 +59,11 @@ const Contact = ({ onBookNow }: { onBookNow?: () => void }) => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-gradient-to-br from-slate-50 via-gray-50 to-zinc-50">
+    <section id="contact" className="py-20 bg-linear-to-br from-slate-50 via-gray-50 to-zinc-50">
       <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-16 xl:px-24">
         <div ref={titleRef as any} className={`text-center mb-16 transition-all duration-1000 ${titleVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <h2 className="text-3xl md:text-4xl font-bold text-orange-800 mb-4">Begin Your Journey</h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-orange-500 to-pink-500 mx-auto mb-6"></div>
+          <div className="w-24 h-1 bg-linear-to-r from-orange-500 to-pink-500 mx-auto mb-6"></div>
           <p className="text-base text-gray-600 max-w-3xl mx-auto">
             Your extraordinary experience awaits. Connect with our lifestyle curators to craft your perfect stay, 
             or simply reach out to discover how we can exceed your expectations.
@@ -77,10 +77,10 @@ const Contact = ({ onBookNow }: { onBookNow?: () => void }) => {
             </div>
             <h3 className="text-xl font-bold text-gray-900 mb-3">Call Us</h3>
             <p className="text-gray-600 mb-4">Speak directly with our reservations team</p>
-            <p className="text-orange-700 font-bold text-lg mb-4">+1 (555) 123-4567</p>
+            <p className="text-orange-700 font-bold text-lg mb-4">+94 41 111 1111</p>
             <button 
               onClick={() => window.open('tel:+15551234567', '_self')}
-              className="bg-gradient-to-r from-orange-500 to-pink-500 hover:from-orange-600 hover:to-pink-600 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300"
+              className="bg-linear-to-r from-orange-500 to-pink-500 hover:from-orange-600 hover:to-pink-600 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300"
             >
               Call Now
             </button>
@@ -98,7 +98,7 @@ const Contact = ({ onBookNow }: { onBookNow?: () => void }) => {
                 const chatButton = document.querySelector('[data-chat-toggle]') as HTMLButtonElement;
                 if (chatButton) chatButton.click();
               }}
-              className="bg-gradient-to-r from-pink-500 to-purple-500 hover:from-pink-600 hover:to-purple-600 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300"
+              className="bg-linear-to-r from-pink-500 to-purple-500 hover:from-pink-600 hover:to-purple-600 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300"
             >
               Start Chat
             </button>
@@ -113,7 +113,7 @@ const Contact = ({ onBookNow }: { onBookNow?: () => void }) => {
             <p className="text-purple-700 font-bold text-sm mb-4">sadeedesh499@gmail.com</p>
             <button 
               onClick={() => window.open('mailto:sadeedesh499@gmail.com?subject=Hotel Inquiry&body=Hello, I would like to inquire about...', '_self')}
-              className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300"
+              className="bg-linear-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300"
             >
               Send Email
             </button>
@@ -128,7 +128,7 @@ const Contact = ({ onBookNow }: { onBookNow?: () => void }) => {
             <p className="text-yellow-700 font-bold text-lg mb-4">Best Rate Guarantee</p>
             <button 
               onClick={onBookNow}
-              className="bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-yellow-600 hover:to-orange-600 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300"
+              className="bg-linear-to-r from-yellow-500 to-orange-500 hover:from-yellow-600 hover:to-orange-600 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300"
             >
               Book Now
             </button>
@@ -172,7 +172,7 @@ const Contact = ({ onBookNow }: { onBookNow?: () => void }) => {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-gradient-to-r from-orange-500 to-pink-500 hover:from-orange-600 hover:to-pink-600 text-white font-semibold py-4 rounded-lg transition-all duration-300 transform hover:scale-105 disabled:opacity-50 flex items-center justify-center"
+                  className="w-full bg-linear-to-r from-orange-500 to-pink-500 hover:from-orange-600 hover:to-pink-600 text-white font-semibold py-4 rounded-lg transition-all duration-300 transform hover:scale-105 disabled:opacity-50 flex items-center justify-center"
                 >
                   {isSubmitting ? 'Sending...' : (
                     <>
@@ -195,11 +195,12 @@ const Contact = ({ onBookNow }: { onBookNow?: () => void }) => {
                 <div className="space-y-4">
                   <div className="flex items-center gap-3">
                     <MapPin className="text-orange-600" size={20} />
-                    <span className="text-gray-700">123 Beachfront Boulevard, Coastal Paradise</span>
+                    <span className="text-gray-700">Weligama,<br />
+                  Matara,Sri Lanka.</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <Phone className="text-orange-600" size={20} />
-                    <span className="text-gray-700">+1 (555) 123-4567</span>
+                    <span className="text-gray-700">+94 41 111 1111</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <Mail className="text-orange-600" size={20} />

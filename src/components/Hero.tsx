@@ -1,5 +1,4 @@
 import { ArrowRight } from 'lucide-react';
-import SadeedehLogo from './SadeedehLogo';
 import { useScrollAnimation, useParallaxScroll } from '../hooks/useScrollAnimation';
 
 const Hero = ({ onBookNow }: { onBookNow: () => void }) => {
@@ -26,15 +25,15 @@ const Hero = ({ onBookNow }: { onBookNow: () => void }) => {
       >
         <source src="https://videos.pexels.com/video-files/3571264/3571264-uhd_2560_1440_30fps.mp4" type="video/mp4" />
       </video>
-      <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-black/50" />
+      <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/30 to-black/50" />
 
       <div className="relative z-10 w-full px-4 md:px-8 lg:px-16 xl:px-24">
         <div className="grid lg:grid-cols-3 gap-12 items-center min-h-screen py-16">
           <div className={`lg:col-span-2 space-y-8 transition-all duration-1000 transform ${heroVisible ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-10 scale-95'}`}>
             <div className="text-center lg:text-left">
               <div className="flex items-center justify-center lg:justify-start gap-4 mb-8">
-                <div className="bg-gradient-to-br from-orange-500 to-pink-500 p-3 rounded-xl shadow-2xl border-2 border-white/30">
-                  <SadeedehLogo size={36} className="text-white drop-shadow-lg" />
+                <div className="bg-linear-to-br from-orange-500 to-pink-500 p-3 rounded-xl shadow-2xl border-2 border-white/30">
+                  
                 </div>
                 <div>
                   <h1 className="text-3xl md:text-4xl font-bold text-white resort-title">
@@ -74,7 +73,7 @@ const Hero = ({ onBookNow }: { onBookNow: () => void }) => {
             <div className="flex flex-col sm:flex-row gap-4">
               <button
                 onClick={() => scrollToSection('rooms')}
-                className="group px-6 py-2 bg-gradient-to-r from-orange-500 to-pink-500 hover:from-orange-600 hover:to-pink-600 text-white font-semibold rounded-lg transition-all duration-300 shadow-lg flex items-center justify-center text-sm"
+                className="group px-6 py-2 bg-linear-to-r from-orange-500 to-pink-500 hover:from-orange-600 hover:to-pink-600 text-white font-semibold rounded-lg transition-all duration-300 shadow-lg flex items-center justify-center text-sm"
               >
                 View Accommodations
                 <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={18} />
@@ -91,9 +90,9 @@ const Hero = ({ onBookNow }: { onBookNow: () => void }) => {
 
           <div ref={formRef as any} className={`bg-white/10 backdrop-blur-lg rounded-2xl p-4 shadow-2xl border border-white/20 transition-all duration-1000 delay-500 ${formVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}>
             <div className="text-center mb-4">
-              <div className="bg-gradient-to-r from-orange-500 to-pink-500 p-1 rounded-xl mb-3">
+              <div className="bg-linear-to-r from-orange-500 to-pink-500 p-1 rounded-xl mb-3">
                 <div className="bg-white rounded-xl p-3">
-                  <h3 className="text-lg font-bold bg-gradient-to-r from-orange-600 to-pink-600 bg-clip-text text-transparent mb-1">Instant Booking</h3>
+                  <h3 className="text-lg font-bold bg-linear-to-r from-orange-600 to-pink-600 bg-clip-text text-transparent mb-1">Instant Booking</h3>
                   <p className="text-gray-700 text-sm">Your luxury escape awaits</p>
                 </div>
               </div>
@@ -127,7 +126,7 @@ const Hero = ({ onBookNow }: { onBookNow: () => void }) => {
               <button
                 type="button"
                 onClick={onBookNow}
-                className="w-full bg-gradient-to-r from-orange-500 to-pink-500 text-white font-bold py-2 rounded-xl shadow-lg text-sm hover:shadow-xl transition-all"
+                className="w-full bg-linear-to-r from-orange-500 to-pink-500 text-white font-bold py-2 rounded-xl shadow-lg text-sm hover:shadow-xl transition-all"
               >
                 🏨 Reserve Now
               </button>
