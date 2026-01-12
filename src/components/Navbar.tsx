@@ -32,7 +32,7 @@ const Navbar = ({ onBookNow }: { onBookNow: () => void }) => {
               
             </div>
             <div>
-              <h1 className="text-xl font-bold bg-linear-to-r from-orange-800 to-pink-700 bg-clip-text text-transparent resort-logo">Sadeedeh</h1>
+              <h1 className="text-xl font-bold bg-linear-to-r from-orange-800 to-pink-700 bg-clip-text text-transparent resort-logo">Sadeedesh</h1>
               <p className="text-xs text-orange-600 font-medium tracking-widest">BEACH RESORT</p>
             </div>
           </div>

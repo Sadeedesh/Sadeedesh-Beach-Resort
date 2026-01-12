@@ -144,7 +144,7 @@ const Footer = () => {
         <div className="border-t border-orange-700 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-orange-200 text-center md:text-left">
-              &copy; {new Date().getFullYear()} Sadeedeh Beach Resort. All rights reserved.
+              &copy; {new Date().getFullYear()}  Beach Resort. All rights reserved.
             </p>
             <div className="flex gap-6 text-orange-200">
               <a href="#" className="hover:text-white transition-colors duration-300">

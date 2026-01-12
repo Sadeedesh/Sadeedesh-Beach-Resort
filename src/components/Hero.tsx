@@ -37,7 +37,7 @@ const Hero = ({ onBookNow }: { onBookNow: () => void }) => {
                 </div>
                 <div>
                   <h1 className="text-3xl md:text-4xl font-bold text-white resort-title">
-                    Sadeedeh
+                    Sadeedesh
                   </h1>
                   <p className="text-orange-300 font-semibold tracking-wide text-sm uppercase">Beach Resort</p>
                 </div>

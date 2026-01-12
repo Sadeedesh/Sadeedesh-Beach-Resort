@@ -35,7 +35,7 @@ const About = () => {
     <section id="about" className="py-20 bg-linear-to-br from-orange-50 via-amber-50 to-yellow-50">
       <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-16 xl:px-24">
         <div ref={titleRef as React.RefObject<HTMLDivElement>} className={`text-center mb-16 transition-all duration-1000 transform ${titleVisible ? 'opacity-100 translate-x-0 rotate-0' : 'opacity-0 -translate-x-20 -rotate-3'}`}>
-          <h2 className="text-3xl md:text-4xl font-bold text-orange-800 mb-4 resort-title">About Sadeedeh Beach Resort</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-orange-800 mb-4 resort-title">About Sadeedesh Beach Resort</h2>
           <div className="w-24 h-1 bg-linear-to-r from-orange-500 to-pink-500 mx-auto mb-6"></div>
           <p className="text-base text-gray-600 max-w-3xl mx-auto">
             More than just a place to stay, we're curators of extraordinary moments. Every guest's journey
