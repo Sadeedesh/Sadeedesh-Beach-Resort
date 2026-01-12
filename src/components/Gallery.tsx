@@ -79,11 +79,11 @@ const Gallery = () => {
   };
 
   return (
-    <section id="gallery" className="py-20 bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-50">
+    <section id="gallery" className="py-20 bg-linear-to-br from-emerald-50 via-teal-50 to-cyan-50">
       <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-16 xl:px-24">
         <div ref={titleRef as any} className={`text-center mb-16 transition-all duration-1000 ${titleVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <h2 className="text-3xl md:text-4xl font-bold text-orange-800 mb-4">Photo Gallery</h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-orange-500 to-pink-500 mx-auto mb-6"></div>
+          <div className="w-24 h-1 bg-linear-to-r from-orange-500 to-pink-500 mx-auto mb-6"></div>
           <p className="text-base text-gray-600 max-w-3xl mx-auto">
             Discover the elegance and luxury that awaits you at Grand Vista Hotel through our curated collection of spaces.
           </p>
@@ -96,7 +96,7 @@ const Gallery = () => {
               onClick={() => setActiveFilter(category)}
               className={`px-6 py-3 rounded-full font-semibold transition-all duration-300 ${
                 activeFilter === category
-                  ? 'bg-gradient-to-r from-orange-500 to-pink-500 text-white shadow-lg'
+                  ? 'bg-linear-to-r from-orange-500 to-pink-500 text-white shadow-lg'
                   : 'bg-white text-orange-600 hover:bg-orange-50 border border-orange-200'
               }`}
             >
@@ -119,7 +119,7 @@ const Gallery = () => {
                 alt={image.alt}
                 className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <div className="absolute inset-0 bg-linear-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-4 left-4 text-white">
                   <p className="font-semibold text-lg">{image.alt}</p>
                   <p className="text-sm text-orange-300">{image.category}</p>

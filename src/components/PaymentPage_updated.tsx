@@ -47,7 +47,7 @@ const PaymentPage = ({ onBack, bookingData }: { onBack: () => void; bookingData:
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-orange-50 to-pink-50 relative overflow-hidden">
+    <div className="min-h-screen bg-linear-to-br from-orange-50 to-pink-50 relative overflow-hidden">
       <AnimatedBackground variant="light" />
       
       <div className="relative z-10 max-w-6xl mx-auto px-4 py-8">
@@ -239,7 +239,7 @@ const PaymentPage = ({ onBack, bookingData }: { onBack: () => void; bookingData:
                 <button
                   type="submit"
                   disabled={isProcessing}
-                  className="w-full bg-gradient-to-r from-orange-500 to-pink-500 hover:from-orange-600 hover:to-pink-600 disabled:bg-gray-400 text-white font-semibold py-4 rounded-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2"
+                  className="w-full bg-linear-to-r from-orange-500 to-pink-500 hover:from-orange-600 hover:to-pink-600 disabled:bg-gray-400 text-white font-semibold py-4 rounded-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2"
                 >
                   {isProcessing ? (
                     <>

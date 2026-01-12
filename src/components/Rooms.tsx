@@ -59,11 +59,11 @@ const Rooms = ({ onBookNow }: { onBookNow: () => void }) => {
   ];
 
   return (
-    <section id="rooms" className="py-20 bg-gradient-to-br from-pink-50 via-rose-50 to-red-50">
+    <section id="rooms" className="py-20 bg-lineart-to-br from-pink-50 via-rose-50 to-red-50">
       <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-16 xl:px-24">
         <div ref={titleRef as any} className={`text-center mb-16 transition-all duration-1000 transform ${titleVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-20'}`}>
           <h2 className="text-3xl md:text-4xl font-bold text-orange-800 mb-4">Luxury Accommodations</h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-orange-500 to-pink-500 mx-auto mb-6"></div>
+          <div className="w-24 h-1 bg-linear-to-r from-orange-500 to-pink-500 mx-auto mb-6"></div>
           <p className="text-base text-gray-600 max-w-3xl mx-auto">
             Sanctuaries of sophistication where every element harmonizes to create your perfect retreat.
             From intimate escapes to grand celebrations, find your ideal space.
@@ -80,11 +80,11 @@ const Rooms = ({ onBookNow }: { onBookNow: () => void }) => {
                   className="w-full h-full object-cover"
                 />
                 {rooms[currentRoom].popular && (
-                  <div className="absolute top-4 right-4 bg-gradient-to-r from-orange-500 to-pink-500 text-white px-4 py-2 rounded-full text-sm font-semibold">
+                  <div className="absolute top-4 right-4 bg-linear-to-r from-orange-500 to-pink-500 text-white px-4 py-2 rounded-full text-sm font-semibold">
                     Most Popular
                   </div>
                 )}
-                <div className="absolute top-4 left-4 bg-gradient-to-r from-orange-600 to-pink-600 text-white px-4 py-2 rounded-full font-bold">
+                <div className="absolute top-4 left-4 bg-linear-to-r from-orange-600 to-pink-600 text-white px-4 py-2 rounded-full font-bold">
                   {rooms[currentRoom].price}/night
                 </div>
               </div>
@@ -121,7 +121,7 @@ const Rooms = ({ onBookNow }: { onBookNow: () => void }) => {
 
                 <button 
                   onClick={onBookNow}
-                  className="w-full bg-gradient-to-r from-orange-500 to-pink-500 hover:from-orange-600 hover:to-pink-600 text-white font-semibold py-4 rounded-lg transition-all duration-300 transform hover:scale-105"
+                  className="w-full bg-linear-to-r from-orange-500 to-pink-500 hover:from-orange-600 hover:to-pink-600 text-white font-semibold py-4 rounded-lg transition-all duration-300 transform hover:scale-105"
                 >
                   Book Now
                 </button>
@@ -132,7 +132,7 @@ const Rooms = ({ onBookNow }: { onBookNow: () => void }) => {
           <div className="flex justify-between items-center mt-8">
             <button
               onClick={() => setCurrentRoom(currentRoom === 0 ? rooms.length - 1 : currentRoom - 1)}
-              className="bg-gradient-to-r from-orange-500 to-pink-500 hover:from-orange-600 hover:to-pink-600 text-white p-3 rounded-full transition-all duration-300 transform hover:scale-110 shadow-lg"
+              className="bg-linear-to-r from-orange-500 to-pink-500 hover:from-orange-600 hover:to-pink-600 text-white p-3 rounded-full transition-all duration-300 transform hover:scale-110 shadow-lg"
             >
               <ChevronLeft size={24} />
             </button>
@@ -143,7 +143,7 @@ const Rooms = ({ onBookNow }: { onBookNow: () => void }) => {
                   key={index}
                   onClick={() => setCurrentRoom(index)}
                   className={`h-3 rounded-full transition-all duration-300 ${
-                    index === currentRoom ? 'w-8 bg-gradient-to-r from-orange-500 to-pink-500' : 'w-3 bg-gray-300 hover:bg-orange-400'
+                    index === currentRoom ? 'w-8 bg-linear-to-r from-orange-500 to-pink-500' : 'w-3 bg-gray-300 hover:bg-orange-400'
                   }`}
                 />
               ))}
@@ -151,7 +151,7 @@ const Rooms = ({ onBookNow }: { onBookNow: () => void }) => {
 
             <button
               onClick={() => setCurrentRoom(currentRoom === rooms.length - 1 ? 0 : currentRoom + 1)}
-              className="bg-gradient-to-r from-orange-500 to-pink-500 hover:from-orange-600 hover:to-pink-600 text-white p-3 rounded-full transition-all duration-300 transform hover:scale-110 shadow-lg"
+              className="bg-linear-to-r from-orange-500 to-pink-500 hover:from-orange-600 hover:to-pink-600 text-white p-3 rounded-full transition-all duration-300 transform hover:scale-110 shadow-lg"
             >
               <ChevronRight size={24} />
             </button>

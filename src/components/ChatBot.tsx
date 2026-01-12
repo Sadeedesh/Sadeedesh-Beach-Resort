@@ -117,7 +117,7 @@ const ChatBot = ({ onBookNow }: { onBookNow?: () => void }) => {
       <button
         onClick={() => setIsOpen(!isOpen)}
         data-chat-toggle
-        className="fixed bottom-6 left-6 bg-gradient-to-r from-orange-500 to-pink-500 hover:from-orange-600 hover:to-pink-600 text-white p-4 rounded-full shadow-2xl transition-all duration-300 transform hover:scale-110 z-50"
+        className="fixed bottom-6 left-6 bg-linear-to-r from-orange-500 to-pink-500 hover:from-orange-600 hover:to-pink-600 text-white p-4 rounded-full shadow-2xl transition-all duration-300 transform hover:scale-110 z-50"
       >
         {isOpen ? <X size={24} /> : <MessageCircle size={24} />}
       </button>
@@ -126,7 +126,7 @@ const ChatBot = ({ onBookNow }: { onBookNow?: () => void }) => {
       {isOpen && (
         <div className="fixed bottom-24 left-6 w-80 h-96 bg-white rounded-2xl shadow-2xl border border-gray-200 flex flex-col z-50">
           {/* Header */}
-          <div className="bg-gradient-to-r from-orange-500 to-pink-500 text-white p-4 rounded-t-2xl flex items-center gap-3">
+          <div className="bg-linear-to-r from-orange-500 to-pink-500 text-white p-4 rounded-t-2xl flex items-center gap-3">
             <Bot size={24} />
             <div>
               <h3 className="font-semibold resort-logo">Sadeedesh Beach Resort</h3>
@@ -143,7 +143,7 @@ const ChatBot = ({ onBookNow }: { onBookNow?: () => void }) => {
               >
                 <div className={`flex items-start gap-2 max-w-[80%] ${message.sender === 'user' ? 'flex-row-reverse' : ''}`}>
                   <div className={`w-8 h-8 rounded-full flex items-center justify-center ${
-                    message.sender === 'user' ? 'bg-gradient-to-r from-orange-500 to-pink-500' : 'bg-gray-200'
+                    message.sender === 'user' ? 'bg-linear-to-r from-orange-500 to-pink-500' : 'bg-gray-200'
                   }`}>
                     {message.sender === 'user' ? 
                       <User size={16} className="text-white" /> : 
@@ -152,7 +152,7 @@ const ChatBot = ({ onBookNow }: { onBookNow?: () => void }) => {
                   </div>
                   <div className={`p-3 rounded-lg ${
                     message.sender === 'user' 
-                      ? 'bg-gradient-to-r from-orange-500 to-pink-500 text-white' 
+                      ? 'bg-linear-to-r from-orange-500 to-pink-500 text-white' 
                       : 'bg-gray-100 text-gray-800'
                   }`}>
                     <p className="text-sm">{message.text}</p>
@@ -194,7 +194,7 @@ const ChatBot = ({ onBookNow }: { onBookNow?: () => void }) => {
               <button
                 onClick={handleSendMessage}
                 disabled={!inputText.trim()}
-                className="bg-gradient-to-r from-orange-500 to-pink-500 hover:from-orange-600 hover:to-pink-600 disabled:bg-gray-300 text-white p-2 rounded-lg transition-colors duration-200"
+                className="bg-linear-to-r from-orange-500 to-pink-500 hover:from-orange-600 hover:to-pink-600 disabled:bg-gray-300 text-white p-2 rounded-lg transition-colors duration-200"
               >
                 <Send size={16} />
               </button>

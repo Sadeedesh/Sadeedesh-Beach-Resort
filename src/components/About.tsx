@@ -32,11 +32,11 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-20 bg-gradient-to-br from-orange-50 via-amber-50 to-yellow-50">
+    <section id="about" className="py-20 bg-linear-to-br from-orange-50 via-amber-50 to-yellow-50">
       <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-16 xl:px-24">
         <div ref={titleRef as React.RefObject<HTMLDivElement>} className={`text-center mb-16 transition-all duration-1000 transform ${titleVisible ? 'opacity-100 translate-x-0 rotate-0' : 'opacity-0 -translate-x-20 -rotate-3'}`}>
           <h2 className="text-3xl md:text-4xl font-bold text-orange-800 mb-4 resort-title">About Sadeedeh Beach Resort</h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-orange-500 to-pink-500 mx-auto mb-6"></div>
+          <div className="w-24 h-1 bg-linear-to-r from-orange-500 to-pink-500 mx-auto mb-6"></div>
           <p className="text-base text-gray-600 max-w-3xl mx-auto">
             More than just a place to stay, we're curators of extraordinary moments. Every guest's journey
             is uniquely crafted, blending modern luxury with personalized touches that feel like home.
@@ -78,7 +78,7 @@ const About = () => {
                 className="w-full h-full object-cover"
               />
             </div>
-            <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-gradient-to-br from-orange-500 to-pink-500 rounded-2xl -z-10"></div>
+            <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-linear-to-br from-orange-500 to-pink-500 rounded-2xl -z-10"></div>
           </div>
         </div>
 
@@ -91,7 +91,7 @@ const About = () => {
                 className={`bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border-t-4 border-orange-500 ${achievementsVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
                 style={{ transitionDelay: `${index * 100 + 600}ms` }}
               >
-                <div className="bg-gradient-to-br from-orange-100 to-pink-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                <div className="bg-linear-to-br from-orange-100 to-pink-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
                   <Icon className="text-orange-700" size={32} />
                 </div>
                 <h4 className="text-xl font-bold text-gray-900 mb-3">{achievement.title}</h4>

@@ -53,7 +53,7 @@ const BookingPage = ({ onBack, onProceedToPayment }: { onBack: () => void; onPro
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-r from-orange-500 to-pink-500 hover:from-orange-600 hover:to-pink-600 relative overflow-hidden">
+    <div className="min-h-screen bg-linear-to-r from-orange-500 to-pink-500 hover:from-orange-600 hover:to-pink-600 relative overflow-hidden">
       <AnimatedBackground />
       
       <div className="relative z-10 max-w-6xl mx-auto px-4 py-8">
@@ -208,7 +208,7 @@ const BookingPage = ({ onBack, onProceedToPayment }: { onBack: () => void; onPro
               <button
                 onClick={handleProceedToPayment}
                 disabled={!selectedRoom || !bookingData.checkIn || !bookingData.checkOut}
-                className="w-full bg-gradient-to-r from-orange-500 to-pink-500 hover:from-orange-600 hover:to-pink-600 disabled:bg-gray-300 text-white font-semibold py-4 rounded-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2"
+                className="w-full bg-linear-to-r from-orange-500 to-pink-500 hover:from-orange-600 hover:to-pink-600 disabled:bg-gray-300 text-white font-semibold py-4 rounded-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2"
               >
                 <CreditCard size={20} />
                 Proceed to Payment
