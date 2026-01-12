@@ -6,6 +6,7 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
   plugins: [
     tailwindcss(),
-    react()],
-    base: "/Sadeedesh-Beach-Resort/"
+    react()
+  ],
+  base: "/Sadeedesh-Beach-Resort/"
 })
